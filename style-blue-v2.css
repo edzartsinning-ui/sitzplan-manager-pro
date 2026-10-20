@@ -2,3 +2,15 @@
 .hero-visual{display:flex;flex-direction:column;align-items:center;gap:14px}.app-icon-large{display:block;width:min(100%,420px);height:auto;border-radius:22%;box-shadow:0 30px 65px #1753a52b}.icon-caption{color:#50667e;font-size:14px;margin:0}.hero{gap:60px}.brand-icon{width:36px;height:36px;border-radius:9px;vertical-align:middle;margin-right:10px}.btn{background:linear-gradient(135deg,#2582ee,#1f64db)}.btn.secondary{background:transparent}.banner{background:linear-gradient(135deg,#e5f3ff,#dce8fa)}@media(max-width:760px){.hero{gap:32px}.app-icon-large{width:min(80vw,340px)}}
 
 .hero{grid-template-columns:minmax(0,1.1fr) minmax(0,1fr)}.hero>*,.hero-visual{min-width:0}.app-icon-large{max-width:100%;object-fit:contain}@media(max-width:760px){.hero{grid-template-columns:minmax(0,1fr)}}
+
+nav .links{flex-wrap:wrap;gap:12px 20px}.brand{display:flex;align-items:center;min-width:0}.brand-icon{flex-shrink:0}p,li,a{overflow-wrap:anywhere}[hidden]{display:none!important}html{scroll-behavior:smooth}details{scroll-margin-top:24px}@media(max-width:400px){nav .brand{font-size:16px}nav .links{gap:10px 16px}.wrap{padding:20px}summary{font-size:19px}}@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+h1,h2,h3,summary{overflow-wrap:anywhere;hyphens:auto}
+
+/* Feature preview for the next app update. */
+.feature-preview{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:34px;align-items:center;padding:34px;background:#e6effa;border:1px solid #ceddf0;border-radius:20px}
+.preview-copy{min-width:0}.preview-copy h2{font-size:clamp(30px,3.4vw,44px);margin:16px 0}.preview-copy .lead{font-size:18px}
+.preview-badge{display:inline-block;color:#184f9b;background:#d2e3fb;border-radius:999px;padding:6px 12px;font-size:12px;font-weight:750;letter-spacing:.04em}
+.feature-list{padding-left:20px;color:#405a76}.feature-list li{margin:8px 0}.preview-note{font-size:14px;color:#50667e}
+.preview-image{margin:0;min-width:0}.preview-image img{display:block;width:100%;height:auto;border:1px solid #d4e0ed;border-radius:12px;background:white;box-shadow:0 16px 45px #18325114}.preview-image figcaption{font-size:13px;color:#50667e;margin-top:12px;text-align:center}
+@media(max-width:850px){.feature-preview{grid-template-columns:minmax(0,1fr);padding:24px;gap:24px}.preview-image{max-width:680px;margin:auto}}
+@media(max-width:400px){.feature-preview{padding:20px}.page h1{font-size:36px}.page h2{font-size:25px}}
