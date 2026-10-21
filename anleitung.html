@@ -250,6 +250,9 @@
 <summary>Sitzplan Pocket auf dem iPhone</summary>
 <p>Im Zahnrad „Pocket einrichten“ wählen. Den QR-Code mit Pocket auf dem iPhone scannen und bis zur Bestätigung geöffnet lassen. Der Kopplungsstatus erscheint anschließend in den Einstellungen. Dort lässt sich die Kopplung auch wieder aufheben.</p>
 <p>Pocket und die Hauptapp tauschen Daten verschlüsselt über Supabase aus. Für die Synchronisierung wird eine Internetverbindung benötigt. Der QR-Code enthält persönliche Zugangsdaten und sollte nur auf dem eigenen iPhone gescannt werden.</p>
+<h3>Datenschutz und Verschlüsselung</h3>
+<p>Die Synchronisationsdaten werden vor der Übertragung an Supabase auf dem Gerät mit AES-256-GCM verschlüsselt. Das Kopplungsgeheimnis wird auch zur Zugriffsprüfung an Supabase übermittelt. Eine vollständig serverunabhängige Ende-zu-Ende-Verschlüsselung wird deshalb nicht zugesichert.</p>
+<p>Einzelne Synchronisationsereignisse, die älter als 30 Tage sind, werden regelmäßig bereinigt. Nach 56 Tagen ohne authentifizierten Pocket-Kontakt werden inaktive Kopplungen einschließlich ihrer Datenstände und Ereignisse durch eine tägliche Serveraufgabe entfernt. Weitere Einzelheiten findest du in den <a href="datenschutz.html">Datenschutzhinweisen</a>.</p>
 </details>
 <details id="kapitel-16">
 <summary>Testphase, Pro &amp; Datensicherung</summary>
