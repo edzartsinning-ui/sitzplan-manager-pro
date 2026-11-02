@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Digitaler Sitzplan für Lehrkräfte: Sitzordnung auf iPad und Mac erstellen, Schüler auslosen, Klassen organisieren und Unterrichtswerkzeuge wie Noise-Meter und Sternstunden nutzen.">
+<meta name="description" content="Sitzplan Manager Pro: Sitzpläne, Unterrichtswerkzeuge und optionales Notenmodul für Mac und iPad. Notenbäume, Gewichtungen und Halbjahresnoten an einem Ort.">
 <title>Digitaler Sitzplan für Lehrer auf iPad & Mac | Sitzplan Manager Pro</title>
 <link rel="stylesheet" href="style-blue-v2.css">
 <link rel="icon" type="image/png" href="app-icon.png">
@@ -13,7 +13,7 @@
 <meta property="og:locale" content="de_DE">
 <meta property="og:site_name" content="Sitzplan Manager Pro">
 <meta property="og:title" content="Digitaler Sitzplan für Lehrer auf iPad & Mac | Sitzplan Manager Pro">
-<meta property="og:description" content="Digitaler Sitzplan für Lehrkräfte: Sitzordnung auf iPad und Mac erstellen, Schüler auslosen, Klassen organisieren und Unterrichtswerkzeuge wie Noise-Meter und Sternstunden nutzen.">
+<meta property="og:description" content="Digitaler Sitzplan für Lehrkräfte: Sitzordnung auf iPad und Mac erstellen, Schüler auslosen, Klassen organisieren und Unterrichtswerkzeuge und ein optionales Notenmodul mit Leistungsbäumen und Halbjahresnoten nutzen.">
 <meta property="og:url" content="https://edzartsinning-ui.github.io/sitzplan-manager-pro/">
 <meta property="og:image" content="https://edzartsinning-ui.github.io/sitzplan-manager-pro/app-icon.png">
 <meta property="og:image:alt" content="App-Symbol von Sitzplan Manager Pro">
@@ -39,7 +39,7 @@
       "@id": "https://edzartsinning-ui.github.io/sitzplan-manager-pro/#webpage",
       "url": "https://edzartsinning-ui.github.io/sitzplan-manager-pro/",
       "name": "Digitaler Sitzplan für Lehrer auf iPad & Mac | Sitzplan Manager Pro",
-      "description": "Digitaler Sitzplan für Lehrkräfte: Sitzordnung auf iPad und Mac erstellen, Schüler auslosen, Klassen organisieren und Unterrichtswerkzeuge wie Noise-Meter und Sternstunden nutzen.",
+      "description": "Digitaler Sitzplan für Lehrkräfte: Sitzordnung auf iPad und Mac erstellen, Schüler auslosen, Klassen organisieren und Unterrichtswerkzeuge und ein optionales Notenmodul mit Leistungsbäumen und Halbjahresnoten nutzen.",
       "inLanguage": "de-DE",
       "isPartOf": {
         "@id": "https://edzartsinning-ui.github.io/sitzplan-manager-pro/#website"
@@ -66,8 +66,11 @@
         "Teams und Zufallsschüler",
         "Timer und Unterrichtswerkzeuge",
         "Noise-Meter als Lautstärkeampel",
+        "Secret Student mit verdeckter Auslosung und Zielbewertung",
         "Sternstunden als klassenbezogenes Belohnungssystem",
-        "Sitzpläne sichern"
+        "Sitzpläne sichern",
+        "Notenmodul mit individuellen Leistungsbäumen",
+        "Gewichtungen, Einzelnoten und Halbjahresnoten"
       ]
     },
     {
@@ -103,7 +106,7 @@
           "name": "Welche Unterrichtswerkzeuge sind enthalten?",
           "acceptedAnswer": {
             "@type": "Answer",
-            "text": "Unter anderem Zufallsschüler, Team-Einteilung, Timer, Lernpartner-Folien, Entscheidungsrad, Noise-Meter, Sternstunden, Stundenplan und Toilettenzeiten."
+            "text": "Unter anderem Zufallsschüler, Team-Einteilung, Timer, Lernpartner-Folien, Entscheidungsrad, Noise-Meter, Secret Student, Sternstunden, Stundenplan und Toilettenzeiten."
           }
         },
         {
@@ -136,6 +139,7 @@
     </a>
 <div class="links">
 <a href="index.html" aria-current="page">Überblick</a>
+<a href="notenmodul.html">Notenmodul</a>
 <a href="anleitung.html">Anleitung</a>
 <a href="support.html">Support</a>
 <a href="datenschutz.html">Datenschutz</a>
@@ -254,12 +258,34 @@
         </span>
 <h3>Werkzeuge griffbereit</h3>
 <p>
-          Zufallsschüler, Teams, Timer, Lernpartner, Entscheidungsrad, Noise-Meter und Sternstunden,
+          Zufallsschüler, Teams, Timer, Lernpartner, Entscheidungsrad, Noise-Meter, Secret Student und Sternstunden,
           Stundenplan und Toilettenzeiten
           unterstützen den Unterrichtsalltag.
         </p>
 </article>
 </div>
+</section>
+<section class="section feature-preview grade-feature" id="notenmodul" aria-labelledby="grade-feature-title">
+  <div class="preview-copy">
+    <span class="preview-badge grade-badge">Neu · optionales Notenmodul</span>
+    <h2 id="grade-feature-title">Alle Noten im Blick. Genau so, wie du unterrichtest.</h2>
+    <p class="lead">Erfasse Leistungen direkt neben deinen Sitzplänen: individuelle Notenbäume, frei gewichtete Bereiche und übersichtliche Halbjahres- und Jahresnoten – für jedes Fach und jede Klasse.</p>
+    <ul class="feature-list">
+      <li><strong>Flexible Leistungsbäume:</strong> schriftlich, mündlich und weitere Bereiche mit bis zu drei Ebenen.</li>
+      <li><strong>Eigene Gewichtungen:</strong> Prozentanteile für Haupt- und Unterbereiche festlegen.</li>
+      <li><strong>Noten mit Tendenzen:</strong> 1 bis 6, auf Wunsch mit + und −, übersichtlich in einer Tabelle.</li>
+      <li><strong>Halbjahr und Schuljahr:</strong> berechnete Ergebnisse ansehen, manuell anpassen und abschließen.</li>
+      <li><strong>28 Tage kostenlos testen:</strong> das Notenmodul getrennt von der Haupt-App ausprobieren; danach optional dauerhaft freischalten.</li>
+    </ul>
+    <a class="btn" href="notenmodul.html">Notenmodul entdecken →</a>
+    <a class="btn secondary" href="anleitung.html#kapitel-19">Bedienung &amp; Hilfe →</a>
+  </div>
+  <figure class="preview-image grade-image">
+    <a href="notenmodul-leistungsuebersicht.webp" target="_blank" rel="noopener noreferrer" aria-label="Leistungsübersicht in voller Größe öffnen">
+      <img src="notenmodul-leistungsuebersicht.webp" width="2048" height="1274" loading="lazy" decoding="async" alt="Leistungsübersicht des neuen Notenmoduls mit Schülern, farbigen Leistungsbereichen, Gewichtungen, Halbjahres- und Jahresnoten sowie einem Notenauswahlfeld.">
+    </a>
+    <figcaption>Notenmodul · Beispiel einer Leistungsübersicht (Demodaten)</figcaption>
+  </figure>
 </section>
 <section class="section feature-preview" id="noise-meter" aria-labelledby="preview-title">
 <div class="preview-copy">
@@ -282,6 +308,7 @@
 <figcaption>Noise-Meter · Screenshot aus der App</figcaption>
 </figure>
 </section>
+<section class="section feature-preview" id="secret-student" aria-labelledby="secret-title"><div class="preview-copy"><span class="preview-badge">Unterrichtswerkzeuge</span><h2 id="secret-title">Secret Student: Das Geheimnis motiviert.</h2><p class="lead">Mit Secret Student wird ein Schüler verdeckt ausgelost. Über „Ansehen“ lässt sich die Auswahl prüfen; anschließend kannst du „Ziel erreicht“ oder „Ziel nicht erreicht“ festhalten. Verlauf, Sound und Präsentation sind direkt im Werkzeug erreichbar.</p><a class="btn secondary" href="anleitung.html#kapitel-18">Secret Student kennenlernen →</a></div><figure class="preview-image"><a href="secret-student.png" target="_blank" rel="noopener noreferrer"><img src="secret-student.png" width="2754" height="1952" loading="lazy" decoding="async" alt="Secret Student in den Unterrichtswerkzeugen: verdeckte Auslosung mit Ziehen, Ansehen und Zielbewertung."></a><figcaption>Secret Student · Screenshot aus der App</figcaption></figure></section>
 <section class="section feature-preview" id="sternstunden" aria-labelledby="stars-title">
 <div class="preview-copy">
 <span class="preview-badge">Neu in Version 1.2</span>
@@ -303,29 +330,14 @@
 </figure>
 </section>
 <!-- POCKET -->
-<section class="banner">
-<span class="eyebrow">
-      Optional für dein iPhone
-    </span>
-<h2>Sitzplan Pocket</h2>
-<p>
-      Die ergänzende iPhone-App lässt sich
-      optional mit der Hauptapp koppeln.
-
-      Supabase wird für diese Pocket-Verbindung genutzt.
-
-      Ohne Einrichtung einer Pocket-Kopplung
-      werden deine Klassen- und Unterrichtsdaten
-      nicht über diese Synchronisation
-      an Supabase übertragen.
-
-      Hinweise zur Einrichtung findest du
-      in der Anleitung für Mac &amp; iPad.
-    </p>
-<p><strong>Verschlüsselte Pocket-Synchronisation:</strong> Klassen- und Unterrichtsdaten werden vor der Übertragung an Supabase mit AES-256-GCM verschlüsselt. Das Kopplungsgeheimnis wird zur Zugriffsprüfung auch an Supabase übermittelt. <a href="datenschutz.html">Mehr zum Datenschutz erfahren →</a></p>
-<a href="anleitung.html">
-      Pocket-Kopplung und weitere Funktionen nachlesen →
-    </a>
+<section class="banner privacy-highlight" id="datenschutz-pocket">
+  <span class="eyebrow">Pocket &amp; Datenschutz</span>
+  <h2>Schülerlisten direkt übertragen – statt in einer Cloud speichern.</h2>
+  <p><strong>Keine unverschlüsselten Schülernamen auf dem Synchronisationsserver:</strong> Die aktuelle Pocket-Kopplung überträgt Klassenlisten und Sitzpläne verschlüsselt direkt zwischen Geräten in Reichweite (WLAN/Bluetooth). Die Schülerlisten werden dafür nicht als Server-Datenstand abgelegt.</p>
+  <p>Für technische Kopplungssignale und einzelne Unterrichtsereignisse wird weiterhin Supabase genutzt. Einzelne Ereignisse – beispielsweise Toilettenereignisse – können auch personenbezogene Angaben enthalten, die <strong>verschlüsselt</strong> an den Server übermittelt werden. Die neue Verbindung ist deshalb nicht vollständig serverfrei. Bereits vorhandene Kopplungen aus älteren Versionen müssen migriert und deren Serverdaten gelöscht werden.</p>
+  <a href="datenschutz.html#pocket-kopplung">Datenschutz im Detail →</a>
+  <span class="privacy-divider"> · </span>
+  <a href="anleitung.html#kapitel-15">Pocket einrichten →</a>
 </section>
 <!-- TESTPHASE -->
 <section class="banner">
@@ -357,10 +369,10 @@
 <article class="card"><h3>Kann ich Sitzpläne auf dem iPad und Mac erstellen?</h3><p>Ja. Sitzplan Manager Pro bietet eine App für iPad und Mac, mit der du Klassenräume einrichten, Tische verschieben und Sitzplätze vergeben kannst.</p></article>
 <article class="card"><h3>Kann ich die Sitzordnung zufällig auslosen?</h3><p>Ja. Du kannst Sitzplätze auslosen, einzelne Schüler fixieren und Sitzregeln bei der Planung berücksichtigen.</p></article>
 <article class="card"><h3>Kann ich Schülerlisten importieren?</h3><p>Ja. Schülerlisten können angelegt oder importiert werden. Informationen zu Excel und WebUntis findest du in der Anleitung.</p></article>
-<article class="card"><h3>Welche Unterrichtswerkzeuge sind enthalten?</h3><p>Unter anderem Zufallsschüler, Team-Einteilung, Timer, Lernpartner-Folien, Entscheidungsrad, Noise-Meter, Sternstunden, Stundenplan und Toilettenzeiten.</p></article>
+<article class="card"><h3>Welche Unterrichtswerkzeuge sind enthalten?</h3><p>Unter anderem Zufallsschüler, Team-Einteilung, Timer, Lernpartner-Folien, Entscheidungsrad, Noise-Meter, Secret Student, Sternstunden, Stundenplan und Toilettenzeiten.</p></article>
 <article class="card"><h3>Kann ich Sitzplan Manager Pro vor dem Kauf testen?</h3><p>Ja. Die App bietet eine 14-tägige Testphase. Danach können die Bearbeitungsfunktionen per Einmalkauf freigeschaltet werden.</p></article>
 </div>
-<p>Weitere Hinweise findest du in der <a href="anleitung.html">Anleitung</a> und unter <a href="support.html">Support und FAQ</a>.</p>
+<p>Mehr zum <a href="notenmodul.html">Notenmodul</a>, zur <a href="anleitung.html">Anleitung</a> und zu <a href="support.html">Support und FAQ</a>.</p>
 </section>
 <!-- WEITERE INFORMATIONEN -->
 <section class="section">

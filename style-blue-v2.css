@@ -14,3 +14,15 @@ h1,h2,h3,summary{overflow-wrap:anywhere;hyphens:auto}
 .preview-image{margin:0;min-width:0}.preview-image img{display:block;width:100%;height:auto;border:1px solid #d4e0ed;border-radius:12px;background:white;box-shadow:0 16px 45px #18325114}.preview-image figcaption{font-size:13px;color:#50667e;margin-top:12px;text-align:center}
 @media(max-width:850px){.feature-preview{grid-template-columns:minmax(0,1fr);padding:24px;gap:24px}.preview-image{max-width:680px;margin:auto}}
 @media(max-width:400px){.feature-preview{padding:20px}.page h1{font-size:36px}.page h2{font-size:25px}}
+
+/* Neues Notenmodul und Datenschutz – 31.10.2026 */
+.grade-feature{background:linear-gradient(135deg,#fff2f3 0%,#f0f5ff 57%,#e4f1fa 100%);border-color:#ebd9df;grid-template-columns:minmax(0,.93fr) minmax(0,1.07fr)}
+.grade-badge{color:#9a3145;background:#ffe5eb}.grade-feature .preview-copy h2{font-size:clamp(31px,3.7vw,48px)}
+.grade-image img{border-color:#ead9dd;box-shadow:0 20px 54px #7d41501c}.grade-hero{padding:65px 0 28px;max-width:910px}.grade-hero h1{max-width:910px;font-size:clamp(44px,6vw,76px)}
+.grade-actions{display:flex;flex-wrap:wrap;gap:0 8px}.grade-showcase{margin:0;padding:14px;background:linear-gradient(145deg,#fff,#eef4fc);border:1px solid #d9e4f0;border-radius:20px;box-shadow:0 20px 50px #17355914}
+.grade-showcase img{display:block;width:100%;height:auto;border-radius:12px}.grade-showcase figcaption{padding:12px 5px 3px;font-size:14px;color:#526780;text-align:center}
+.steps{padding-left:22px;max-width:860px}.steps li{margin:16px 0;padding-left:7px}.grade-step{padding:30px;background:white;border:1px solid #d4e0ed;border-radius:16px}
+.grade-offer{background:linear-gradient(135deg,#ffe7eb,#e4efff)}.privacy-highlight{background:linear-gradient(135deg,#e4f5f2,#e8f1fc)}
+.privacy-highlight h2{font-size:clamp(25px,3vw,35px)}.privacy-divider{color:#55758a;margin:0 10px}
+@media(max-width:850px){.grade-feature{grid-template-columns:1fr}.grade-hero{padding-top:38px}}
+@media(max-width:760px){.grade-showcase{padding:8px;border-radius:13px}.grade-showcase img{border-radius:8px}.grade-hero h1{font-size:clamp(38px,10vw,60px)}.grade-step{padding:20px}}

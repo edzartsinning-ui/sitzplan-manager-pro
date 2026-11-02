@@ -52,6 +52,7 @@
 <img class="brand-icon" src="app-icon.png" alt="" width="36" height="36">Sitzplan Manager Pro</a>
 <div class="links">
 <a href="index.html">Überblick</a>
+<a href="notenmodul.html">Notenmodul</a>
 <a href="anleitung.html" aria-current="page">Anleitung</a>
 <a href="support.html">Support</a>
 <a href="datenschutz.html">Datenschutz</a>
@@ -63,13 +64,13 @@
 <div class="page">
 <span class="eyebrow">Hilfe & Kurzanleitung</span>
 <h1>Gut vorbereitet.<br>Schnell zurechtgefunden.</h1>
-<p class="lead">Sitzplan Manager Pro auf Mac und iPad – vom ersten Sitzplan bis zur Pocket-Kopplung.</p>
+<p class="lead">Sitzplan Manager Pro auf Mac und iPad – vom Sitzplan über die Unterrichtswerkzeuge bis zum neuen Notenmodul und zur Pocket-Kopplung.</p>
 <div style="margin:24px 0">
 <a class="btn" href="https://apps.apple.com/de/app/sitzplan-manager-pro/id6822172879" target="_blank" rel="noopener noreferrer">Sitzplan Manager Pro im App Store ansehen ↗</a>
 </div>
-<p>Stand: 20. Oktober 2026. Maus- und Tastaturhinweise beziehen sich auf den Mac; auf dem iPad werden die entsprechenden Aktionen per Touch ausgeführt. Das Noise-Meter ist in den Unterrichtswerkzeugen enthalten.</p>
+<p>Stand: 31. Oktober 2026. Maus- und Tastaturhinweise beziehen sich auf den Mac; auf dem iPad werden die entsprechenden Aktionen per Touch ausgeführt. Das Noise-Meter ist in den Unterrichtswerkzeugen enthalten.</p>
 <label for="suche">Anleitung durchsuchen</label>
-<input id="suche" type="search" placeholder="Zum Beispiel: Import, Pocket oder Backup">
+<input id="suche" type="search" placeholder="Zum Beispiel: Notenmodul, Gewichtung, Pocket oder Backup">
 <p id="result" role="status">
 </p>
 <details id="kapitel-0" open>
@@ -184,7 +185,7 @@
 <h3>Orange · Stundenplan</h3>
 <p>Stundenplan öffnen.</p>
 <h3>Gelb · Unterrichtswerkzeuge</h3>
-<p>Timer, Lernpartner und Entscheidungsrad öffnen. Das Noise-Meter gehört zu den Unterrichtswerkzeugen.</p>
+<p>Timer, Lernpartner, Entscheidungsrad, Noise-Meter, Secret Student und Sternstunden öffnen. <a href="#kapitel-18">Secret Student</a> bietet eine verdeckte Auslosung mit Zielbewertung.</p>
 <h3>Leeren</h3>
 <p>Aktuelle Sitzverteilung entfernen.</p>
 <h3>Rückgängig</h3>
@@ -247,12 +248,15 @@
 <p>Start und Rückkehr erfassen. In der Historie abgeschlossene Einträge ansehen, suchen und bearbeiten oder als PDF ausgeben. „PDF speichern &amp; leeren“ löscht die betreffenden abgeschlossenen Einträge erst nach erfolgreichem Export; laufende Toilettengänge bleiben erhalten.</p>
 </details>
 <details id="kapitel-15">
-<summary>Sitzplan Pocket auf dem iPhone</summary>
-<p>Im Zahnrad „Pocket einrichten“ wählen. Den QR-Code mit Pocket auf dem iPhone scannen und bis zur Bestätigung geöffnet lassen. Der Kopplungsstatus erscheint anschließend in den Einstellungen. Dort lässt sich die Kopplung auch wieder aufheben.</p>
-<p>Pocket und die Hauptapp tauschen Daten verschlüsselt über Supabase aus. Für die Synchronisierung wird eine Internetverbindung benötigt. Der QR-Code enthält persönliche Zugangsdaten und sollte nur auf dem eigenen iPhone gescannt werden.</p>
-<h3>Datenschutz und Verschlüsselung</h3>
-<p>Die Synchronisationsdaten werden vor der Übertragung an Supabase auf dem Gerät mit AES-256-GCM verschlüsselt. Das Kopplungsgeheimnis wird auch zur Zugriffsprüfung an Supabase übermittelt. Eine vollständig serverunabhängige Ende-zu-Ende-Verschlüsselung wird deshalb nicht zugesichert.</p>
-<p>Einzelne Synchronisationsereignisse, die älter als 30 Tage sind, werden regelmäßig bereinigt. Nach 56 Tagen ohne authentifizierten Pocket-Kontakt werden inaktive Kopplungen einschließlich ihrer Datenstände und Ereignisse durch eine tägliche Serveraufgabe entfernt. Weitere Einzelheiten findest du in den <a href="datenschutz.html">Datenschutzhinweisen</a>.</p>
+<summary>Sitzplan Pocket auf dem iPhone · direkte Übertragung</summary>
+<h3>Neue Kopplung und Schülerlisten</h3>
+<p>Öffne in der Haupt-App das Zahnrad und wähle „Pocket einrichten“. Scanne den QR-Code mit der aktuellen Version von Pocket. Bei der neuen Verbindung werden die Klassenlisten und Sitzplaninformationen direkt zwischen Geräten in Reichweite übertragen. Halte WLAN und Bluetooth eingeschaltet und die Geräte nahe beieinander; mobile Daten allein genügen für diese direkte Übertragung nicht.</p>
+<p>Wenn Namen oder Klassen geändert wurden, weist die Haupt-App darauf hin, dass Pocket in Reichweite aktualisiert werden muss. Den aktuellen Verbindungs- und Übertragungsstatus kannst du in den Kopplungseinstellungen prüfen.</p>
+<h3>Datenschutz beim Datenaustausch</h3>
+<p><strong>Schülerlisten werden nicht als vollständiger Datenstand an Supabase hochgeladen.</strong> Die Datenübertragung zwischen Haupt-App und Pocket ist verschlüsselt. Über den Server laufen weiterhin technische Verbindungsinformationen, Änderungsbenachrichtigungen und einzelne verschlüsselte Ereignisse, die gegebenenfalls personenbezogene Informationen enthalten können. Eine vollständig serverfreie Nutzung mit Pocket wird daher nicht versprochen.</p>
+<h3>Umstellung von älteren Versionen</h3>
+<p>Bei einer früheren Supabase-Kopplung fordert die neue Haupt-App die Löschung der alten Daten auf dem Server an und verlangt eine neue Kopplung. Hierfür ist eine Internetverbindung nötig. Falls Pocket noch eine ältere Version nutzt, aktualisiere die iPhone-App zuerst. Bis die Serverlöschung bestätigt ist, können frühere Daten noch dort vorhanden sein.</p>
+<p>Mehr in den <a href="datenschutz.html#pocket-kopplung">Datenschutzhinweisen</a>.</p>
 </details>
 <details id="kapitel-16">
 <summary>Testphase, Pro &amp; Datensicherung</summary>
@@ -284,7 +288,32 @@
 <a href="index.html#noise-meter">Zum Noise-Meter mit App-Screenshot →</a>
 </p>
 </details>
+<details id="kapitel-18"><summary>Secret Student</summary><p>Mit Secret Student wird ein Schüler verdeckt ausgelost. Über „Ansehen“ lässt sich die Auswahl prüfen; anschließend kannst du „Ziel erreicht“ oder „Ziel nicht erreicht“ festhalten. Verlauf, Sound und Präsentation sind direkt im Werkzeug erreichbar.</p><h3>Öffnen und ziehen</h3><p>Unterrichtswerkzeuge öffnen und „Secret Student“ wählen. Mit „Ziehen“ die verdeckte Auswahl starten. „Ansehen“ zeigt die ausgeloste Person an; achte vor dem Öffnen darauf, wer den Bildschirm sehen kann.</p><h3>Ziel bewerten</h3><p>Mit „Ziel erreicht“ oder „Ziel nicht erreicht“ das Ergebnis festhalten. Über „Verlauf“ bisherige Einträge ansehen. Der Sound lässt sich über das Kontrollkästchen umschalten.</p><h3>Präsentation</h3><p>Die Schaltfläche „Präsentieren“ öffnet die Präsentationsansicht. Weitere Optionen erreichst du über „Einstellungen“ im Werkzeug.</p><p><a href="index.html#secret-student">Secret Student mit App-Screenshot →</a></p></details>
 </div>
+<details id="kapitel-19">
+<summary>Notenmodul: Fächer, Notenbäume und Leistungsübersicht</summary>
+<p>Das Notenmodul ist ein optionaler Bestandteil von Sitzplan Manager Pro auf Mac und iPad. Hier verwaltest du Leistungen pro Klasse, Fach, Schuljahr und Halbjahr. <a href="notenmodul.html">Screenshot und Funktionsüberblick ansehen →</a></p>
+<h3>1. Leistungsübersicht öffnen</h3>
+<p>Tippe oder klicke auf den roten Noten-Button neben den Unterrichtswerkzeugen. Wähle oben die Klasse und das gewünschte Fach. Auf dem Mac erscheint die Leistungsübersicht als eigenes Fenster, auf dem iPad als eigene Ansicht. Sie enthält links die Schüler und rechts die farblich gegliederten Leistungen.</p>
+<h3>2. Fach und Schuljahr anlegen</h3>
+<p>Lege ein Fach an und prüfe das vorgeschlagene Schuljahr. Die beiden Halbjahre können separat bewertet werden. Vorhandene Fächer kannst du über das Kontextmenü bearbeiten, duplizieren, archivieren oder löschen.</p>
+<h3>3. Notenbaum aufbauen</h3>
+<p>Richte zunächst die Hauptbereiche ein, zum Beispiel „Schriftliche Leistungen“ und „Sonstige Leistungen“. Erstelle darunter optional weitere Unterbereiche – insgesamt sind bis zu drei Ebenen möglich. Blautöne kennzeichnen die erste, Grüntöne die zweite und Orangetöne die dritte Ebene. Du kannst Bereiche nach deinem Fach individuell benennen.</p>
+<h3>4. Gewichtungen festlegen</h3>
+<p>Öffne die Prozentangabe des gewünschten Bereichs, um seine Gewichtung gegenüber den Geschwisterbereichen zu ändern. So lassen sich beispielsweise schriftliche und sonstige Leistungen 45 zu 55 Prozent gewichten und einzelne Unterbereiche wiederum nach eigenen Anteilen verteilen. Prüfe die angezeigten Prozentsummen nach jeder Änderung.</p>
+<h3>5. Leistungen und Noten eintragen</h3>
+<p>Füge innerhalb eines Leistungsbereichs eine neue Leistung hinzu und vergib eine aussagekräftige Bezeichnung. Tippe anschließend in die Tabellenzelle eines Schülers. Die Schnellwahl unterstützt das deutsche Notensystem von 1 bis 6 inklusive + und −. Mit „Weiter“ kannst du der Reihe nach weitere Noten eingeben. Bereits ausgewählte Zeilen sind farblich hervorgehoben.</p>
+<h3>6. Halbjahres- und Jahresnoten prüfen</h3>
+<p>Rechts in der Tabelle erscheinen die Ergebnisse für das erste Halbjahr (HJ 1), das zweite Halbjahr (HJ 2) und das Jahr. Automatisch berechnete Noten lassen sich bei Bedarf manuell korrigieren; eine solche Änderung kann wieder aufgehoben werden. Abgeschlossene Ergebnisse lassen sich vor Änderungen erneut öffnen.</p>
+<h3>7. Checklisten, Statistik und Ausgabe</h3>
+<p>Mit „Liste erstellen“ legst du Kontrolllisten an. Leistungsstatistiken und Notenspiegel helfen beim Überblick über die Klasse. Über „Export und Druck“ kannst du verfügbare Ausgaben erstellen. Achtung: Dateien mit Noten können vertrauliche Schülerdaten enthalten.</p>
+<h3>8. Schülerdaten bei Präsentation schützen</h3>
+<p>Private Notenansichten sollen beim Spiegeln oder auf einem Publikumsschirm verborgen bleiben. Für die Arbeit mit Noten verwende den Hauptbildschirm im erweiterten Modus. Prüfe vor dem Unterricht, welche Anzeige dein Projektor oder externer Monitor tatsächlich erhält.</p>
+<h3>9. 28 Tage testen und dauerhaft freischalten</h3>
+<p>Das Notenmodul hat eine <strong>eigene</strong> kostenlose 28-Tage-Testphase, getrennt von der 14-Tage-Testphase der Haupt-App. Nach Ablauf kannst du es über einen gesonderten Einmalkauf dauerhaft freischalten; es gibt keine automatische Verlängerung. Im Kaufdialog findest du auch „Käufe wiederherstellen“. Für den Test und den Kauf wird Apple StoreKit verwendet. Die Verfügbarkeit des Angebots richtet sich nach App Store Connect.</p>
+<h3>10. Datensicherung</h3>
+<p>Die vollständige App-Datensicherung umfasst auch Notenbücher und Noteneinträge. Verwende vor dem Import oder größeren Änderungen eine aktuelle Sicherung. Der einfache Sitzplan-Austausch ist nicht als Noten-Backup gedacht. Achte bei einem vollständigen Import darauf, ob du vorhandene Daten ersetzen würdest.</p>
+</details>
 <script src="hilfe.js" defer>
 </script>
 </main>
