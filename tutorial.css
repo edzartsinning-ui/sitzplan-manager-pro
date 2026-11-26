@@ -137,7 +137,7 @@
 
 .tutorial-explanation {
   position: absolute;
-  z-index: 1;
+  z-index: 3;
   width: min(280px, 100%);
   max-height: 60vh;
   overflow: auto;
