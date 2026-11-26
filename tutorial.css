@@ -1,0 +1,132 @@
+.tutorial-jump {
+  display: flex;
+  flex-wrap: wrap;
+  gap: .5rem 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.tutorial-section {
+  margin-bottom: 3rem;
+  scroll-margin-top: 1rem;
+}
+
+.tutorial-image {
+  position: relative;
+  border-radius: 12px;
+  background: #dbe6f4;
+  box-shadow: 0 8px 30px #18325120;
+}
+
+.tutorial-image img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: inherit;
+}
+
+.tutorial-marker,
+.tutorial-number {
+  border-radius: 50%;
+  background: #103575;
+  color: #fff;
+  font-weight: 750;
+}
+
+.tutorial-marker {
+  position: absolute;
+  top: var(--y);
+  left: var(--x);
+  width: clamp(26px, 3.1vw, 37px);
+  aspect-ratio: 1;
+  transform: translate(-50%, -50%);
+  padding: 0;
+  border: 2px solid #fff;
+  box-shadow: 0 2px 8px #10244377;
+  cursor: pointer;
+}
+
+.tutorial-marker:hover,
+.tutorial-marker[aria-expanded="true"] {
+  background: #861c48;
+}
+
+.tutorial-topics {
+  display: grid;
+  gap: .5rem 1rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  align-items: start;
+  margin-top: 1rem;
+}
+
+.tutorial-topics details {
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  border: 1px solid #c9d9eb;
+  border-radius: 10px;
+  scroll-margin: 1rem;
+}
+
+.tutorial-topics details[open] {
+  border-color: #496fa0;
+}
+
+.tutorial-topics summary {
+  display: flex;
+  min-height: 44px;
+  align-items: center;
+  gap: .65rem;
+  padding: .6rem .85rem;
+  list-style: none;
+  cursor: pointer;
+}
+
+.tutorial-topics summary::-webkit-details-marker {
+  display: none;
+}
+
+.tutorial-topics summary::after {
+  content: '+';
+  margin-left: auto;
+  font-size: 1.2em;
+}
+
+.tutorial-topics details[open] summary::after {
+  content: '−';
+}
+
+.tutorial-number {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 1.65rem;
+  aspect-ratio: 1;
+  font-size: .8rem;
+}
+
+.tutorial-topics p {
+  margin: 0;
+  padding: 0 1rem .85rem;
+}
+
+.tutorial-marker:focus-visible,
+.tutorial-topics summary:focus-visible {
+  outline: 3px solid #861c48;
+  outline-offset: 2px;
+}
+
+@media (max-width: 650px) {
+  .tutorial-topics {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-marker {
+    width: 20px;
+    font-size: 10px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
